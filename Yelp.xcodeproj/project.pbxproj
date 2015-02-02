@@ -22,6 +22,15 @@
 		42FD6C6618DC286B000BF2B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD6C4E18DC286B000BF2B9 /* UIKit.framework */; };
 		42FD6C6E18DC286B000BF2B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42FD6C6C18DC286B000BF2B9 /* InfoPlist.strings */; };
 		42FD6C7018DC286B000BF2B9 /* YelpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FD6C6F18DC286B000BF2B9 /* YelpTests.m */; };
+		5043B6FC1A7F757D00A91A48 /* AccessoryViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5043B6FA1A7F757D00A91A48 /* AccessoryViewCell.m */; };
+		5043B6FD1A7F757D00A91A48 /* AccessoryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5043B6FB1A7F757D00A91A48 /* AccessoryViewCell.xib */; };
+		50F475C61A7D771700AC7EAB /* YelpViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F475C41A7D771700AC7EAB /* YelpViewCell.m */; };
+		50F475C71A7D771700AC7EAB /* YelpViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F475C51A7D771700AC7EAB /* YelpViewCell.xib */; };
+		50F475CB1A7D8A4D00AC7EAB /* Business.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F475CA1A7D8A4D00AC7EAB /* Business.m */; };
+		50F475D01A7EA5E200AC7EAB /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F475CE1A7EA5E200AC7EAB /* FilterViewController.m */; };
+		50F475D11A7EA5E200AC7EAB /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F475CF1A7EA5E200AC7EAB /* FilterViewController.xib */; };
+		50F475D51A7EF9F500AC7EAB /* SwitchViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F475D31A7EF9F500AC7EAB /* SwitchViewCell.m */; };
+		50F475D61A7EF9F500AC7EAB /* SwitchViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50F475D41A7EF9F500AC7EAB /* SwitchViewCell.xib */; };
 		63E591F41F684901AF8C1C19 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEC6D18C14F46F8AF2EA320 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +66,23 @@
 		42FD6C6B18DC286B000BF2B9 /* YelpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YelpTests-Info.plist"; sourceTree = "<group>"; };
 		42FD6C6D18DC286B000BF2B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42FD6C6F18DC286B000BF2B9 /* YelpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YelpTests.m; sourceTree = "<group>"; };
-		8436EC1AAEE1439D997D29F7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		5043B6F91A7F757D00A91A48 /* AccessoryViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessoryViewCell.h; sourceTree = "<group>"; };
+		5043B6FA1A7F757D00A91A48 /* AccessoryViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessoryViewCell.m; sourceTree = "<group>"; };
+		5043B6FB1A7F757D00A91A48 /* AccessoryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccessoryViewCell.xib; sourceTree = "<group>"; };
+		50F475C31A7D771700AC7EAB /* YelpViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YelpViewCell.h; sourceTree = "<group>"; };
+		50F475C41A7D771700AC7EAB /* YelpViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YelpViewCell.m; sourceTree = "<group>"; };
+		50F475C51A7D771700AC7EAB /* YelpViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YelpViewCell.xib; sourceTree = "<group>"; };
+		50F475C91A7D8A4D00AC7EAB /* Business.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Business.h; sourceTree = "<group>"; };
+		50F475CA1A7D8A4D00AC7EAB /* Business.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Business.m; sourceTree = "<group>"; };
+		50F475CD1A7EA5E200AC7EAB /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		50F475CE1A7EA5E200AC7EAB /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		50F475CF1A7EA5E200AC7EAB /* FilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
+		50F475D21A7EF9F500AC7EAB /* SwitchViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchViewCell.h; sourceTree = "<group>"; };
+		50F475D31A7EF9F500AC7EAB /* SwitchViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchViewCell.m; sourceTree = "<group>"; };
+		50F475D41A7EF9F500AC7EAB /* SwitchViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchViewCell.xib; sourceTree = "<group>"; };
 		9DEC6D18C14F46F8AF2EA320 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D01A648F8A7B44B920588B6C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F7AA5AEFA7721689731B448B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +125,9 @@
 				420474F818DC2B2100E88E07 /* MainViewController.h */,
 				420474F918DC2B2100E88E07 /* MainViewController.m */,
 				420474FA18DC2B2100E88E07 /* MainViewController.xib */,
+				50F475CD1A7EA5E200AC7EAB /* FilterViewController.h */,
+				50F475CE1A7EA5E200AC7EAB /* FilterViewController.m */,
+				50F475CF1A7EA5E200AC7EAB /* FilterViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -112,7 +139,7 @@
 				42FD6C6918DC286B000BF2B9 /* YelpTests */,
 				42FD6C4918DC286B000BF2B9 /* Frameworks */,
 				42FD6C4818DC286B000BF2B9 /* Products */,
-				8436EC1AAEE1439D997D29F7 /* Pods.xcconfig */,
+				9CEA1B8BF338A0B22A262063 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +167,8 @@
 		42FD6C5018DC286B000BF2B9 /* Yelp */ = {
 			isa = PBXGroup;
 			children = (
+				50F475CC1A7D8A5300AC7EAB /* Views */,
+				50F475C81A7D89F400AC7EAB /* Models */,
 				420474F318DC297600E88E07 /* API */,
 				420474F718DC2A9200E88E07 /* View Controllers */,
 				42FD6C5918DC286B000BF2B9 /* AppDelegate.h */,
@@ -177,6 +206,40 @@
 				42FD6C6C18DC286B000BF2B9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50F475C81A7D89F400AC7EAB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50F475C91A7D8A4D00AC7EAB /* Business.h */,
+				50F475CA1A7D8A4D00AC7EAB /* Business.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		50F475CC1A7D8A5300AC7EAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50F475C31A7D771700AC7EAB /* YelpViewCell.h */,
+				50F475C41A7D771700AC7EAB /* YelpViewCell.m */,
+				50F475C51A7D771700AC7EAB /* YelpViewCell.xib */,
+				50F475D21A7EF9F500AC7EAB /* SwitchViewCell.h */,
+				50F475D31A7EF9F500AC7EAB /* SwitchViewCell.m */,
+				50F475D41A7EF9F500AC7EAB /* SwitchViewCell.xib */,
+				5043B6F91A7F757D00A91A48 /* AccessoryViewCell.h */,
+				5043B6FA1A7F757D00A91A48 /* AccessoryViewCell.m */,
+				5043B6FB1A7F757D00A91A48 /* AccessoryViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9CEA1B8BF338A0B22A262063 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D01A648F8A7B44B920588B6C /* Pods.debug.xcconfig */,
+				F7AA5AEFA7721689731B448B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +319,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F475D11A7EA5E200AC7EAB /* FilterViewController.xib in Resources */,
 				42FD6C5518DC286B000BF2B9 /* InfoPlist.strings in Resources */,
+				50F475D61A7EF9F500AC7EAB /* SwitchViewCell.xib in Resources */,
 				420474FC18DC2B2100E88E07 /* MainViewController.xib in Resources */,
+				50F475C71A7D771700AC7EAB /* YelpViewCell.xib in Resources */,
+				5043B6FD1A7F757D00A91A48 /* AccessoryViewCell.xib in Resources */,
 				42FD6C5D18DC286B000BF2B9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +367,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -310,8 +377,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5043B6FC1A7F757D00A91A48 /* AccessoryViewCell.m in Sources */,
+				50F475D51A7EF9F500AC7EAB /* SwitchViewCell.m in Sources */,
 				42FD6C5B18DC286B000BF2B9 /* AppDelegate.m in Sources */,
 				42FD6C5718DC286B000BF2B9 /* main.m in Sources */,
+				50F475C61A7D771700AC7EAB /* YelpViewCell.m in Sources */,
+				50F475CB1A7D8A4D00AC7EAB /* Business.m in Sources */,
+				50F475D01A7EA5E200AC7EAB /* FilterViewController.m in Sources */,
 				420474F618DC299500E88E07 /* YelpClient.m in Sources */,
 				420474FB18DC2B2100E88E07 /* MainViewController.m in Sources */,
 			);
@@ -427,7 +499,7 @@
 		};
 		42FD6C7418DC286B000BF2B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8436EC1AAEE1439D997D29F7 /* Pods.xcconfig */;
+			baseConfigurationReference = D01A648F8A7B44B920588B6C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -441,7 +513,7 @@
 		};
 		42FD6C7518DC286B000BF2B9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8436EC1AAEE1439D997D29F7 /* Pods.xcconfig */;
+			baseConfigurationReference = F7AA5AEFA7721689731B448B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
