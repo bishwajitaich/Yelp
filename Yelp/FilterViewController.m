@@ -52,6 +52,12 @@
     self.tableView.delegate = self;
     
     [self.tableView registerNib:[UINib nibWithNibName:@"SwitchViewCell" bundle:nil] forCellReuseIdentifier:@"SwitchCell"];
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
+    // customize navigation bar link colors?
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar
+     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
 }
 
 - (void)didReceiveMemoryWarning {

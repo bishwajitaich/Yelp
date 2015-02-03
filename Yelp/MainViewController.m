@@ -60,6 +60,10 @@ NSString * const kYelpTokenSecret = @"mqtKIxMIR4iBtBPZCmCLEb-Dz3Y";
     
     UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"Filter" style:UIBarButtonItemStylePlain target:self action:@selector(onFilterButton)];
     self.navigationItem.leftBarButtonItem = leftButton;
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
+    // customize navigation bar link colors?
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
