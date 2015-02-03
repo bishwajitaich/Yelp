@@ -191,7 +191,7 @@
         case 2: // Distance
             cell.delegate = self;
             distanceMile = [self.availableFilters[section][@"value"] objectAtIndex:indexPath.row];
-            cell.on = radiusFilter ? [radiusFilter isEqualToString:distanceMile] : false;
+            cell.on = [radiusFilter integerValue] > 0 ? [radiusFilter isEqualToString:distanceMile] : false;
             cell.settingsLabel.text = distanceMile;
             break;
         case 3: //Categories
