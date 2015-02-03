@@ -28,8 +28,8 @@
 - (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.selectedCategories = [NSMutableSet set];
-        self.activeFilters = [NSMutableDictionary dictionary];
+        //self.selectedCategories = [NSMutableSet set];
+        //self.activeFilters = [NSMutableDictionary dictionary];
         [self initCategories];
         [self initAvailableFilters];
     }
@@ -57,6 +57,18 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    self.activeFilters = [defaults objectForKey:@"activeFilters"] ? [defaults objectForKey:@"activeFilters"]: [NSMutableDictionary dictionary];
+    self.selectedCategories = [NSMutableSet setWithArray:[defaults objectForKey:@"selectedCategories"]];
+    
+    CGFloat distanceMeters = [[self.activeFilters valueForKey:@"radius_filter"] floatValue];
+    if (distanceMeters > 0) {
+        CGFloat distanceMiles = distanceMeters/1600;
+        [self.activeFilters setObject:[NSString stringWithFormat:@"%li", (long)[@(distanceMiles) integerValue]] forKey:@"radius_filter"];
+    }
 }
 
 #pragma mark - Navgation Bar actions
@@ -89,6 +101,12 @@
 - (void) onApplyButton {
     [self dismissViewControllerAnimated:YES completion:nil];
     [self.delegate filterViewController:self filtersDidChange:self.filters];
+    
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.activeFilters forKey:@"activeFilters"];
+    [defaults setObject:[self.selectedCategories allObjects] forKey:@"selectedCategories"];
+    [defaults synchronize];
 }
 
 #pragma mark - SwitchCell delegate
