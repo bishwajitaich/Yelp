@@ -31,4 +31,4 @@ Time spent: `12`
 
 ### Walkthrough
 
-![yelp](https://cloud.githubusercontent.com/assets/4771383/6017091/32a7df98-ab3f-11e4-9b00-7f645b3c8639.gif)
+![yelp_ios](https://cloud.githubusercontent.com/assets/4771383/6017311/75b1515a-ab41-11e4-8f92-6b36b4991bc3.gif)
